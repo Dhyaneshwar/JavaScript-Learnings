@@ -1,8 +1,3 @@
-# JavaScript
-
-- JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.
-- It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.
-
 ## Compiled Language:
 
 - A compiled language is a programming language that is converted from a high-level language into machine code so that the computer can execute it.
@@ -32,3 +27,104 @@ Scripting languages are most widely used to create a website.
 **Examples:** JavaScript, PHP, Perl, etc.
 
 ![Image](/Assests/Images/ProgrammingLang.png)
+
+## What is Programming Paradigms
+
+Programming paradigm is an approach to solve problem using tools and techniques that are available to us by following some approach.
+
+They are discussed below:
+
+1. Imperative Programming
+2. Declarative Programming
+
+### Imperative Programming vs Declarative Programming
+
+Imperative programming focuses on how to get to the end result, while declarative programming focuses on what is the end result.
+A simplified **example to distinguish** between an imperative and declarative approach is to think of giving driving directions.
+
+> **Imperative:-** When a person asks for the route for a specific location, you tell him how to get there by providing turn-by-turn directions.
+> **Declarative:-** When you jump in a taxi, you just tell the driver the address of the location where you want to go.
+
+#### Examples:
+
+1. Write a function to double the values of all the elements in an array:-
+
+```
+> Imperative Approach
+	function doubleAnArray(arr){
+		let result = []
+		for(let i=0;i<arr.length;i++){
+			result.push(arr[i]*2);
+		}
+		return result;
+	}
+
+> Declarative Approach
+	const doubleAnArray = arr.map(ele => ele * 2);
+```
+
+2. Write a function to all the elements in an array:-
+
+```
+> Imperative Approach
+	function sumOfArray(arr) {
+		let result = 0
+		for(let i=0;i<arr.length;i++){
+			result +=arr[i];
+		}
+		return result;
+	}
+
+> Declarative Approach
+	const sumOfArray = arr.reduce((arr,ele) => ele + 2, 0);
+```
+
+### Imperative Programming
+
+- In imperative programming, every step is coded and the code will specify **_how_** the problem is to be solved, which means that pre-coded models are not called on.
+- Because the written code performs the function, the programmer must code each step rather than relying on models that are able to solve it.
+- Example:- C, C++, C#, Java, etc.
+
+#### 1. Procedural programming paradigm
+
+- The procedural programming paradigm is where program code is divided up into procedures, which are discrete blocks of code that carry out a single task.
+
+#### 2. Object-oriented programming paradigm
+
+- The program is written as a collection of classes and objects which are meant for communication.
+
+#### 3. Parallel processing approach
+
+- Parallel processing is the processing of program instructions by dividing them among multiple processors.
+- A parallel processing system posses many numbers of processor with the objective of running a program in less time by dividing them.
+- This approach seems to be like divide and conquer.
+- Examples- NESL, C, C+, etc.
+
+### Declarative Programming
+
+- Declarative programming is a method to encapsulate the logic required for code to perform an action and instead focuses on **_what_** the desired outcome is.
+- Declarative models rely on preconfigured capabilities, i.e. methods and library, in the language to accomplish a task without explicit step-by-step instruction on how to do it.
+- Example:- HTML, SQL, CSS, etc.
+
+#### 1. Logic programming paradigms
+
+- Logic programming is a programming paradigm that is largely based on formal logic.
+- Any program written in a logic programming language is a set of sentences in logical form, expressing facts and rules about some problem domain.
+
+#### 2. Functional programming paradigms
+
+- Functional programming means using functions to the best effect for creating clean and maintainable software.
+- More specifically, functional programming is a set of approaches to coding, usually described as a programming paradigm.
+- Example:- Javascript, Haskell, etc.
+
+#### 3. Database/Data driven programming paradigms
+
+- Data-driven programming is a programming paradigm in which the program statements describe the data to be matched and the processing required
+- Example: `Select * from employee`
+
+---
+
+# Javascript
+
+- JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.
+- It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.
